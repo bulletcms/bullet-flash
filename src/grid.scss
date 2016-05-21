@@ -1,5 +1,10 @@
 @import 'util';
 
+.container {
+  width: 100%;
+  margin: auto;
+}
+
 .grid-strict {
   width: 100%;
   &:after {
@@ -19,15 +24,30 @@
 .col {
   float: left;
   @include border-box();
+  width: 100%;
 }
 
-@mixin col-list($columns) {
+@mixin col-list($columns, $factor) {
   @for $i from 1 through $columns {
     .col#{$columns}-#{$i} {
-      width: 100% / $columns * $i;
+      width: 100% / $columns * $i * $factor;
+      max-width: 100%;
     }
   }
 }
 
-@include col-list(12);
-@include col-list(16);
+@media (min-width: $grid-sm-breakpoint) and (max-width: $grid-md-breakpoint - 1px){
+  @include col-list(12, 2);
+  @include col-list(16, 2);
+  .container {
+    max-width: ($grid-sm-breakpoint + $grid-md-breakpoint) / 2;
+  }
+}
+
+@media (min-width: $grid-md-breakpoint){
+  @include col-list(12, 1);
+  @include col-list(16, 1);
+  .container {
+    max-width: $grid-md-breakpoint;
+  }
+}
