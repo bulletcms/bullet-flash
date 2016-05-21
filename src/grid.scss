@@ -1,5 +1,7 @@
-.grid {
-  width: 100%
+@import 'util';
+
+.grid-strict {
+  width: 100%;
   &:after {
     content: "";
     display: block;
@@ -7,8 +9,16 @@
   }
 }
 
+.grid {
+  @extend .grid-strict;
+  .col {
+    padding: $grid-vertical-padding $grid-gutter-padding;
+  }
+}
+
 .col {
   float: left;
+  @include border-box();
 }
 .col-1 {
   width: calc(100% / 12);
