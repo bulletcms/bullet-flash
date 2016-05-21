@@ -44,10 +44,18 @@
   }
 }
 
-@media (min-width: $grid-md-breakpoint){
+@media (min-width: $grid-md-breakpoint) and (max-width: $grid-lg-breakpoint - 1px){
   @include col-list(12, 1);
   @include col-list(16, 1);
   .container {
-    max-width: $grid-md-breakpoint;
+    max-width: $grid-md-breakpoint * 15 / 16;
+  }
+}
+
+@media (min-width: $grid-lg-breakpoint){
+  @include col-list(12, 0.5);
+  @include col-list(16, 0.5);
+  .container {
+    max-width: 80%;
   }
 }

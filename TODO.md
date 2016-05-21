@@ -1,8 +1,9 @@
 # TODO
 
 ### In Progress
-- [ ] grid
-  - [ ] container, max width
+- [x] grid
+  - [x] container, max width
+  - [ ] large screen support
 - [ ] nav bar
 - [ ] side bar
 - [ ] timeline
