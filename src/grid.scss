@@ -21,6 +21,12 @@
   }
 }
 
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .col {
   float: left;
   @include border-box();
