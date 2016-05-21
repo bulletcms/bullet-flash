@@ -25,7 +25,7 @@ const PATHS = {
 let scssbuild = ()=>{
   return gulp.src(PATHS.MAINSCSS)
     .pipe(scss({ style: 'compressed' }))
-    .pipe(cleancss())
+    .pipe(cleancss({keepSpecialComments: 0}))
     .pipe(size())
     .pipe(gulp.dest(PATHS.DIST));
 };
@@ -36,7 +36,7 @@ gulp.task(scssbuild);
 let scsstest = ()=>{
   return gulp.src(PATHS.MAINSCSS)
     .pipe(scss({ style: 'compressed' }))
-    .pipe(cleancss())
+    .pipe(cleancss({keepSpecialComments: 0}))
     .pipe(size())
     .pipe(gulp.dest(PATHS.TEST));
 };
