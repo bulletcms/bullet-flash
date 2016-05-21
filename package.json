@@ -27,5 +27,8 @@
     "gulp-size": "^2.1.0",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1"
   }
 }
