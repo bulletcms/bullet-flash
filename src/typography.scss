@@ -1,5 +1,18 @@
 body {
   font-size: $typography-base-size;
-  line-height: 1.5;
-  letter-spacing: $typography-base-size / 32;
+  line-height: $typography-base-line-height;
+  letter-spacing: normal;
+
+  @media (min-width: $grid-sm-breakpoint) and (max-width: $grid-md-breakpoint - 1px){
+    font-size: $typography-base-size * 5 / 4;
+    line-height: $typography-base-line-height * 5 / 4;
+  }
+
+  @media (min-width: $grid-md-breakpoint) and (max-width: $grid-lg-breakpoint - 1px){
+    font-size: $typography-base-size * 4 / 3;
+  }
+
+  @media (min-width: $grid-lg-breakpoint){
+
+  }
 }
