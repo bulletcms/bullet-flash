@@ -76,6 +76,8 @@ h1, h2, h3, h4, h5, h6 {
 header, .hero {
   font-size: 2em;
   line-height: 1.125;
+  background-color: $color-tertiary;
+  padding: 8px;
 }
 
 // Code //
