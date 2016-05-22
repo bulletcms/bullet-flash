@@ -1,5 +1,27 @@
-$color-lightest: #FEFEFF;
-$color-light   : #B3C5D5;
+$color-lightest: #F8FAFC;
+$color-light   : #CCD9E4;
 $color-mid     : #466B89;
-$color-dark    : #0C2C4A;
-$color-darkest : #000912;
+$color-dark    : #04223B;
+$color-darkest : #010F1A;
+
+// Definitions //
+/*
+primary    : text
+secondary  : prominent background
+tertiary   : reserved background
+quarternary: backdrop
+quinary    : emphasis
+senary     : shadow
+
+primary and quarternary complement
+secondary and tertiary complement
+*/
+
+
+// Light Theme //
+$color-primary    : #111111;
+$color-secondary  : $color-mid;
+$color-tertiary   : $color-light;
+$color-quarternary: $color-lightest;
+$color-quinary    : $color-dark;
+$color-senary     : $color-darkest;
