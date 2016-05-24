@@ -8,19 +8,14 @@ body {
   line-height     : $typography-base-line-height;
   letter-spacing  : normal;
 
-  @media (min-width: $grid-sm-breakpoint) and (max-width: $grid-md-breakpoint - 1px){
-    font-size  : $typography-base-size * 6 / 5;
-    line-height: $typography-base-line-height * 6 / 5;
-  }
-
   @media (min-width: $grid-md-breakpoint) and (max-width: $grid-lg-breakpoint - 1px){
-    font-size  : $typography-base-size * 4 / 3;
-    line-height: $typography-base-line-height * 6 / 5;
+    font-size  : $typography-base-size * 8 / 7;
+    line-height: $typography-base-line-height * 8 / 7;
   }
 
   @media (min-width: $grid-lg-breakpoint){
-    font-size  : $typography-base-size * 4 / 3;
-    line-height: $typography-base-line-height * 6 / 5;
+    font-size  : $typography-base-size * 9 / 7;
+    line-height: $typography-base-line-height * 8 / 7;
   }
 }
 
