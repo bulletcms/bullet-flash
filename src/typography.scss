@@ -1,57 +1,57 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic);
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: $color-primary;
-  background-color: $color-quarternary;
-  font-size: $typography-base-size;
-  line-height: $typography-base-line-height;
-  letter-spacing: normal;
+  font-family     : 'Open Sans', sans-serif;
+  color           : $color-primary;
+  background-color: $color-secondary;
+  font-size       : $typography-base-size;
+  line-height     : $typography-base-line-height;
+  letter-spacing  : normal;
 
   @media (min-width: $grid-sm-breakpoint) and (max-width: $grid-md-breakpoint - 1px){
-    font-size: $typography-base-size * 6 / 5;
+    font-size  : $typography-base-size * 6 / 5;
     line-height: $typography-base-line-height * 6 / 5;
   }
 
   @media (min-width: $grid-md-breakpoint) and (max-width: $grid-lg-breakpoint - 1px){
-    font-size: $typography-base-size * 4 / 3;
+    font-size  : $typography-base-size * 4 / 3;
     line-height: $typography-base-line-height * 6 / 5;
   }
 
   @media (min-width: $grid-lg-breakpoint){
-    font-size: $typography-base-size * 4 / 3;
+    font-size  : $typography-base-size * 4 / 3;
     line-height: $typography-base-line-height * 6 / 5;
   }
 }
 
 // Headers //
 h1 {
-  font-size: 2.5em;
+  font-size  : 2.5em;
   font-weight: 300;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size  : 1.75em;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size  : 1.25em;
   font-weight: 300;
 }
 
 h4 {
-  font-size: 1.125em;
+  font-size  : 1.125em;
   font-weight: 700;
 }
 
 h5 {
-  font-size: 1em;
+  font-size  : 1em;
   font-weight: 700;
 }
 
 h6 {
-  font-size: 0.8em;
+  font-size  : 0.8em;
   font-weight: 700;
 }
 
@@ -61,31 +61,41 @@ small {
 
 h1, h2, h3, h4, h5, h6 {
   small {
-    color: $color-secondary;
+    color    : $color-tertiary;
     font-size: (1em / 3);
   }
 }
 
 // Long Form //
 .article {
-  margin: auto;
+  margin   : auto;
   max-width: 36em;
 }
 
 // Header //
 header, .hero {
-  font-size: 2em;
-  line-height: 1.125;
-  background-color: $color-tertiary;
-  padding: 8px;
+  font-size       : 2em;
+  line-height     : 1.125;
+  background-color: $color-bg-primary;
+  padding         : 8px;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $color-secondary;
+
+    small {
+      color      : $color-bg-tertiary;
+      font-size  : (1em / 3);
+      font-weight: 400;
+    }
+  }
 }
 
 // Code //
 pre {
-  font-size: 0.75em;
-  line-height: 1.25;
-  padding: 8px;
-  border: 1px solid $color-secondary;
-  border-radius: 4px;
-  background-color: $color-tertiary;
+  font-size       : 0.75em;
+  line-height     : 1.25;
+  padding         : 8px;
+  border          : 1px solid $color-bg-secondary;
+  border-radius   : 4px;
+  background-color: $color-grey-2;
 }
