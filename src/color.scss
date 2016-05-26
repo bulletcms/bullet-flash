@@ -1,14 +1,14 @@
-$color-grey-1 : #FAFAFA;
-$color-grey-2 : #EAEAEA;
-$color-grey-3 : #AAAAAA;
-$color-grey-4 : #383838;
-$color-grey-5 : #111111;
+$color-grey-1 : #FAFAFA !default;
+$color-grey-2 : #EAEAEA !default;
+$color-grey-3 : #AAAAAA !default;
+$color-grey-4 : #383838 !default;
+$color-grey-5 : #111111 !default;
 
-$color-palette-1 : #CFF09E;
-$color-palette-2 : #A8DBA8;
-$color-palette-3 : #79BD9A;
-$color-palette-4 : #3B8686;
-$color-palette-5 : #0B486B;
+$color-palette-1 : #CFF09E !default;
+$color-palette-2 : #A8DBA8 !default;
+$color-palette-3 : #79BD9A !default;
+$color-palette-4 : #3B8686 !default;
+$color-palette-5 : #0B486B !default;
 
 
 // Definitions //
@@ -25,9 +25,9 @@ primary and secondary complement
 
 
 // Light Theme //
-$color-primary     : $color-grey-5;
-$color-secondary   : $color-grey-1;
-$color-tertiary    : $color-palette-4;
-$color-bg-primary  : $color-palette-5;
-$color-bg-secondary: $color-palette-3;
-$color-bg-tertiary : $color-palette-2;
+$color-primary     : $color-grey-5 !default;
+$color-secondary   : $color-grey-1 !default;
+$color-tertiary    : $color-palette-4 !default;
+$color-bg-primary  : $color-palette-5 !default;
+$color-bg-secondary: $color-palette-3 !default;
+$color-bg-tertiary : $color-palette-2 !default;
