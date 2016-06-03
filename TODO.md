@@ -7,8 +7,9 @@
 - [ ] nav bar
 - [ ] side bar
 - [ ] timeline
-- [ ] footer
 - [ ] hero
+  - [ ] background image
 
 
 ### Finished
+- [x] footer
