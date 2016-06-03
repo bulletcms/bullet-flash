@@ -3,14 +3,25 @@
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
+$hover-color-saturate-percentage: 12.5%;
+$hover-color-lighten-percentage: 1.5625%;
+
 button, .button {
   padding: 12px;
   border-radius: 4px;
   color: $color-secondary;
   background-color: $color-tertiary;
   cursor: pointer;
+
+  &:hover {
+    background-color: lighten(saturate($color-tertiary, $hover-color-saturate-percentage), $hover-color-lighten-percentage);
+  }
 }
 
 .button-primary {
   background-color: $color-bg-primary;
+
+  &:hover {
+    background-color: lighten(saturate($color-bg-primary, $hover-color-saturate-percentage * 8), $hover-color-lighten-percentage);
+  }
 }
