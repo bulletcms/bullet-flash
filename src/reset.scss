@@ -9,3 +9,12 @@ input, button, submit {
   appearance: none;
   border: none;
 }
+
+a.no-style {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -21,6 +21,11 @@
   }
 }
 
+.row.flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
 .row:after {
   content: "";
   display: block;
