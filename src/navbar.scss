@@ -1,3 +1,57 @@
 nav, .nav {
+  .nav-spacer {
+    display: none;
+    height: $navbar-height;
+  }
 
+  .nav-container {
+    z-index: 64;
+    position: static;
+    height: $navbar-height;
+    width: 100%;
+    background-color: $color-bg-secondary;
+    color: $color-secondary;
+
+    .container {
+      height: $navbar-height;
+    }
+
+    // Brand //
+    .brand {
+      display: inline-block;
+      height: $navbar-height;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .brand-padded {
+      padding: 4px;
+    }
+
+    // List //
+    .nav-list {
+      list-style: none;
+      margin: 0;
+
+      .nav-item {
+        display: inline-block;
+        padding: 2px;
+      }
+
+      .nav-item + .nav-item {
+        margin: 0 0 0 28px;
+      }
+    }
+  }
+
+  a {
+    @extend a.no-style;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
 }

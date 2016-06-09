@@ -7,14 +7,18 @@ aside, .aside {
   background-color: $color-grey-4;
   box-shadow: inset -4px 1px 6px 1px rgba(0, 0, 0, 0.2);
 
+  a {
+    @extend a.no-style;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
   .title {
     background-color: $color-bg-secondary;
-    color: $color-primary;
+    color: $color-secondary;
     padding: 16px;
-
-    h1, h2, h3, h4, h5, h6 {
-      margin: 0;
-    }
   }
 }
 
