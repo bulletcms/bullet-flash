@@ -21,12 +21,21 @@
   }
 }
 
-.row.flex-v-center {
+// flexbox utilities
+.flex-v-center {
   display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.flex-v-stretch {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+// end
 
 .row:after {
   content: "";
