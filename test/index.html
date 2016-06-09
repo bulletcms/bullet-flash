@@ -62,6 +62,9 @@
         <div class="page-header">
           <h1>Grid</h1>
         </div>
+
+        <p>Available are a 12 column grid and an 8 column grid.</p><p>The 12 column shrinks to half size to accommodate 24 columns at 4k resolutions to better use screen real estate. The 8 column will always remain 8 columns wide for screens larger than 1024px.</p><p>For screens smaller than 512px, all columns have 100% width.</p><p>For screens smaller than 1024px, 12 columns will auto resize to fit a 3 column layout, and 8 columns will auto resize to fit a 4 column layout.</p>
+
         <h3>12 Grid</h3>
         <div class="grid test-grid">
           <div class="col col12-12">.col .col12-12</div>
@@ -85,6 +88,26 @@
   &lt;div class="col12 col-10"&gt;.col .col12-10&lt;/div&gt;
   &lt;div class="col12 col-3"&gt;.col .col12-3&lt;/div&gt;
   &lt;div class="col12 col-9"&gt;.col .col12-9&lt;/div&gt;
+  ...
+&lt;/div&gt;</pre>
+
+        <h3>8 Grid</h3>
+        <div class="grid test-grid">
+          <div class="col col8-8">.col .col8-8</div>
+          <div class="col col8-2">.col .col8-2</div>
+          <div class="col col8-6">.col .col8-6</div>
+          <div class="col col8-5">.col .col8-5</div>
+          <div class="col col8-3">.col .col8-3</div>
+          <div class="col col8-4">.col .col8-4</div>
+          <div class="col col8-4">.col .col8-4</div>
+        </div>
+        <pre>
+&lt;div class="grid"&gt;
+  &lt;div class="col col8-8"&gt;.col .col8-8&lt;/div&gt;
+  &lt;div class="col col8-2"&gt;.col .col8-2&lt;/div&gt;
+  &lt;div class="col col8-6"&gt;.col .col8-6&lt;/div&gt;
+  &lt;div class="col col8-5"&gt;.col .col8-5&lt;/div&gt;
+  &lt;div class="col col8-3"&gt;.col .col8-3&lt;/div&gt;
   ...
 &lt;/div&gt;</pre>
 
@@ -186,7 +209,7 @@
         </div>
 
         <h3>Cards</h3>
-        <div class="grid">
+        <div class="grid flex-v-stretch">
           <div class="col col12-3">
             <div class="card">
               <h3>Card 1</h3>

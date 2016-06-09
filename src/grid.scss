@@ -53,10 +53,14 @@
   @for $i from 1 through $columns {
     .col#{$columns}-#{$i} {
       // increase column size to ceil of factor unless it ceils to 100%, exception being the full size column
+      // if factor is greater than columns, then make (columns / factor) the 100% scale with exceptions for ceil to column
       width: if($i == $columns, 100%,
         if(ceil($i / $columns * $factor) == $factor,
           100% / $factor * floor($i / $columns * $factor),
-          100% / $factor * ceil($i / $columns * $factor)
+          if($columns < $factor,
+            100% * $columns / $factor / $factor * ceil($i / $columns * $factor),
+            100% / $factor * ceil($i / $columns * $factor)
+          )
         )
       );
     }
@@ -81,8 +85,8 @@
 
 @media (min-width: $grid-lg-breakpoint){
   @include col-list(12, 24);
-  @include col-list(8, 16);
+  @include col-list(8, 8);
   .container {
-    max-width: 80%;
+    max-width: $grid-lg-breakpoint * 15 / 16;
   }
 }
