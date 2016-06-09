@@ -237,7 +237,7 @@
         <h3>Sidebar</h3>
       </div>
     </section>
-    <div class="grid-strict">
+    <div class="grid-strict flex-v-stretch">
       <div class="col col8-1 sidebar">
         <ul class="list">
           <li class="list-item">Item 1</li>
@@ -246,45 +246,67 @@
         </ul>
       </div>
       <div class="col col8-7">
-        <div class="container">Content</div>
+        <div class="container">
+          <div class="article">
+            <h2>Article Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut aliquet nunc. Maecenas commodo libero arcu, vitae ultrices quam iaculis vitae. Nulla eros purus, auctor sed laoreet in, pharetra eget mi. Phasellus molestie id odio eu mollis. Proin nec tellus et lectus suscipit cursus quis eget eros. Nunc interdum lacus elit, id gravida ligula placerat eu. Nullam hendrerit iaculis lorem, nec scelerisque turpis pretium ac. Morbi blandit dolor massa, cursus lobortis eros malesuada ut. Sed semper ullamcorper gravida. Integer at diam urna. In ligula tortor, egestas nec dictum eu, suscipit vitae mauris. Sed imperdiet sit amet massa at fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p>Maecenas vulputate nec mi non posuere. Vestibulum malesuada erat justo, at aliquet enim posuere vestibulum. Ut viverra porta est, eu semper lacus euismod et. Curabitur elementum vestibulum nisi imperdiet ornare. Nulla lobortis mi eu dictum viverra. Donec rhoncus, tortor vitae lobortis fringilla, eros nibh malesuada erat, faucibus condimentum risus urna ut elit. Phasellus non ullamcorper lectus, eu rutrum risus. Nullam convallis scelerisque justo ac sollicitudin. Duis nisi arcu, condimentum non eros in, rutrum mollis urna. Integer elit orci, rhoncus sit amet rutrum vitae, ullamcorper ut leo. Donec ut tempus eros.</p>
+          </div>
+        </div>
       </div>
     </div>
+    <section>
+      <div class="container">
+        <pre>
+&lt;!--must be outside of containers and sections for full width,
+best practice is to place container into content column--&gt;
+&lt;div class="grid-strict"&gt;
+  &lt;div class="col col8-1 sidebar"&gt;
+    &lt;ul class="list"&gt;
+      &lt;li class="list-item"&gt;Item 1&lt;/li&gt;
+      &lt;li class="list-item"&gt;Item 2&lt;/li&gt;
+      &lt;li class="list-item"&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class="col col8-7"&gt;
+    &lt;div class="container"&gt;Content&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+      </div>
+    </section>
 
 
     <footer>
       <div class="container">
-        <div class="grid">
-          <div class="row flex-v-center">
-            <div class="col col12-4">
-              <h4>Bullet-Flash &#8226; <a class="no-style" target="_blank" href="http://github.com/bulletcms/bullet-flash"><i class="fa fa-github" aria-hidden="true"></i></a></h4>
-              muzzle flash styles for Bullet-Tracer
-            </div>
-            <div class="col col12-4">
-              <span class="text-center">
-                <h6><i class="fa fa-code" aria-hidden="true"></i> with &hearts; by xorkevin &#8226; <a class="no-style" target="_blank" href="http://github.com/xorkevin"><i class="fa fa-github" aria-hidden="true"></i></a></h6>
-              </span>
-            </div>
-            <div class="col col12-4">
-              <pre>
+        <div class="grid flex-v-center">
+          <div class="col col12-4">
+            <h4>Bullet-Flash &#8226; <a class="no-style" target="_blank" href="http://github.com/bulletcms/bullet-flash"><i class="fa fa-github" aria-hidden="true"></i></a></h4>
+            muzzle flash styles for Bullet-Tracer
+          </div>
+          <div class="col col12-4">
+            <span class="text-center">
+              <h6><i class="fa fa-code" aria-hidden="true"></i> with &hearts; by xorkevin &#8226; <a class="no-style" target="_blank" href="http://github.com/xorkevin"><i class="fa fa-github" aria-hidden="true"></i></a></h6>
+            </span>
+          </div>
+          <div class="col col12-4">
+            <pre>
 &lt;footer&gt;
-  &lt;div class="container"&gt;
-    &lt;div class="grid"&gt;
-      &lt;div class="row flex-v-center"&gt;
-        &lt;div class="col col12-4"&gt;
-          ...
-        &lt;/div&gt;
-        &lt;div class="col col12-4"&gt;
-          ...
-        &lt;/div&gt;
-        &lt;div class="col col12-4"&gt;
-          ...
-        &lt;/div&gt;
-      &lt;/div class="row"&gt;
+&lt;div class="container"&gt;
+  &lt;div class="grid flex-v-center"&gt;
+    &lt;div class="col col12-4"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class="col col12-4"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class="col col12-4"&gt;
+      ...
     &lt;/div&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 &lt;/footer&gt;
 </pre>
-            </div>
           </div>
         </div>
       </div>
