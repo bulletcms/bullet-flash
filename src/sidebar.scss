@@ -1,0 +1,19 @@
+.sidebar {
+  color: $color-grey-3;
+  background-color: $color-grey-4;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .list-item {
+    width: 100%;
+    padding: 16px;
+
+    &:hover {
+      background-color: $color-grey-5;
+    }
+  }
+}

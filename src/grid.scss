@@ -36,7 +36,6 @@
 
 .col {
   float: left;
-  @include border-box();
   width: 100%;
 }
 
