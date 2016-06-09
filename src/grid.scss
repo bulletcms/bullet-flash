@@ -37,36 +37,42 @@
 .col {
   float: left;
   width: 100%;
+  max-width: 100%;
 }
 
 @mixin col-list($columns, $factor) {
   @for $i from 1 through $columns {
     .col#{$columns}-#{$i} {
-      width: 100% / $columns * $i * $factor;
-      max-width: 100%;
+      // increase column size to ceil of factor unless it ceils to 100%, exception being the full size column
+      width: if($i == $columns, 100%,
+        if(ceil($i / $columns * $factor) == $factor,
+          100% / $factor * floor($i / $columns * $factor),
+          100% / $factor * ceil($i / $columns * $factor)
+        )
+      );
     }
   }
 }
 
 @media (min-width: $grid-sm-breakpoint) and (max-width: $grid-md-breakpoint - 1px){
-  @include col-list(12, 2);
-  @include col-list(16, 2);
+  @include col-list(12, 3);
+  @include col-list(8, 4);
   .container {
     max-width: ($grid-sm-breakpoint + $grid-md-breakpoint) / 2;
   }
 }
 
 @media (min-width: $grid-md-breakpoint) and (max-width: $grid-lg-breakpoint - 1px){
-  @include col-list(12, 1);
-  @include col-list(16, 1);
+  @include col-list(12, 12);
+  @include col-list(8, 8);
   .container {
     max-width: $grid-md-breakpoint * 15 / 16;
   }
 }
 
 @media (min-width: $grid-lg-breakpoint){
-  @include col-list(12, 0.5);
-  @include col-list(16, 0.5);
+  @include col-list(12, 24);
+  @include col-list(8, 16);
   .container {
     max-width: 80%;
   }
