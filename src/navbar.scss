@@ -7,10 +7,10 @@ nav, .nav {
   .nav-container {
     z-index: 64;
     position: static;
-    height: $navbar-height;
     width: 100%;
     background-color: $color-bg-secondary;
     color: $color-secondary;
+    overflow-x: auto;
 
     .container {
       height: $navbar-height;
@@ -20,6 +20,7 @@ nav, .nav {
     .brand {
       display: inline-block;
       height: $navbar-height;
+      float: left;
 
       img {
         height: 100%;
@@ -34,16 +35,28 @@ nav, .nav {
     // List //
     .nav-list {
       list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
       margin: 0;
+      padding: 0;
+      height: 100%;
+      float: left;
 
-      .nav-item {
+      li {
+        line-height: $navbar-height - 16;
         display: inline-block;
-        padding: 2px;
+        padding: 4px;
       }
 
-      .nav-item + .nav-item {
-        margin: 0 0 0 28px;
+      li + li {
+        margin: 0 0 0 24px;
       }
+    }
+
+    .nav-list.right {
+      float: right;
     }
   }
 
