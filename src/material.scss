@@ -8,20 +8,50 @@ $hover-color-lighten-percentage: 1.5625%;
 
 button, .button {
   padding: 12px;
+  border: 2px solid $color-tertiary;
   border-radius: 4px;
   color: $color-secondary;
   background-color: $color-tertiary;
   cursor: pointer;
 
   &:hover {
-    background-color: lighten(saturate($color-tertiary, $hover-color-saturate-percentage), $hover-color-lighten-percentage);
+    color: $color-tertiary;
+    background-color: $color-secondary;
+    border: 2px solid $color-tertiary;
   }
 }
 
 .button-primary {
   background-color: $color-bg-primary;
+  border: 2px solid $color-bg-primary;
 
   &:hover {
-    background-color: lighten(saturate($color-bg-primary, $hover-color-saturate-percentage * 8), $hover-color-lighten-percentage);
+    color: $color-bg-primary;
+    background-color: $color-secondary;
+    border: 2px solid $color-bg-primary;
+  }
+}
+
+.button-outline {
+  color: $color-tertiary;
+  background-color: $color-secondary;
+  border: 2px solid $color-tertiary;
+
+  &:hover {
+    color: $color-secondary;
+    background-color: $color-tertiary;
+    border: 2px solid $color-tertiary;
+  }
+}
+
+.button-outline-primary {
+  color: $color-bg-primary;
+  background-color: $color-secondary;
+  border: 2px solid $color-bg-primary;
+
+  &:hover {
+    color: $color-secondary;
+    background-color: $color-bg-primary;
+    border: 2px solid $color-bg-primary;
   }
 }
