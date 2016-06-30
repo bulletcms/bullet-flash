@@ -2,6 +2,22 @@
   padding: 8px;
   font-size: 0.92rem;
 
+  .comment-info {
+    .username {
+      color: $color-bg-primary;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    .score, .date {
+      font-size: 0.8em;
+      font-family: monospace;
+    }
+  }
+
   .comment-options {
     list-style: none;
     margin: 0;
@@ -11,6 +27,15 @@
     li {
       display: inline-block;
       padding: 4px;
+
+      a {
+        color: $color-grey-4;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
