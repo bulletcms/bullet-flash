@@ -10,10 +10,15 @@ nav, .nav {
     width: 100%;
     background-color: $color-tertiary;
     color: $color-secondary;
-    overflow-x: auto;
 
     .container {
-      height: $navbar-height;
+      // height: $navbar-height;
+
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
     }
 
     // Brand //
@@ -45,9 +50,11 @@ nav, .nav {
       float: left;
 
       li {
-        line-height: $navbar-height - 16;
+        float: left;
         display: inline-block;
         padding: 4px;
+        height: $navbar-height;
+        line-height: $navbar-height;
       }
 
       li + li {
