@@ -20,6 +20,10 @@ aside, .aside {
     color: $color-secondary;
     padding: 16px;
   }
+
+  .list .list-item:hover {
+    background-color: $color-grey-5;
+  }
 }
 
 .list {
@@ -30,9 +34,5 @@ aside, .aside {
   .list-item {
     width: 100%;
     padding: 16px;
-
-    &:hover {
-      background-color: $color-grey-5;
-    }
   }
 }
