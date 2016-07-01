@@ -75,3 +75,15 @@ nav, .nav {
     margin: 0;
   }
 }
+
+nav.docked, .nav.docked {
+  .nav-spacer {
+    display: block;
+  }
+
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
