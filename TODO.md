@@ -3,7 +3,8 @@
 ### In Progress
 - [x] grid
   - [x] container, max width
-  - [ ] large screen support
+  - [x] large screen support
+  - [ ] image wall
 - [ ] nav bar
 - [ ] side bar
 - [ ] timeline
