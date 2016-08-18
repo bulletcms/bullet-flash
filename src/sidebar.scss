@@ -3,9 +3,9 @@ aside, .aside {
 }
 
 .sidebar {
-  color: $color-grey-3;
-  background-color: $color-grey-4;
-  box-shadow: inset -4px 1px 6px 1px rgba(0, 0, 0, 0.2);
+  background-color: $color-bg-4;
+  color: $color-text-2;
+  box-shadow: 4px 1px 6px 1px rgba(0, 0, 0, 0.2);
 
   a {
     @extend a.no-style;
@@ -16,13 +16,14 @@ aside, .aside {
   }
 
   .title {
-    background-color: $color-tertiary;
-    color: $color-secondary;
+    background-color: $color-bg-2;
+    color: $color-text-1;
     padding: 16px;
   }
 
   .list .list-item:hover {
-    background-color: $color-grey-5;
+    background-color: $color-bg-1;
+    color: $color-text-1;
   }
 }
 

@@ -1,33 +1,83 @@
-$color-grey-1 : #FAFAFA !default;
-$color-grey-2 : #EAEAEA !default;
-$color-grey-3 : #AAAAAA !default;
-$color-grey-4 : #383838 !default;
-$color-grey-5 : #111111 !default;
-
-$color-palette-1 : #CFF09E !default;
-$color-palette-2 : #A8DBA8 !default;
-$color-palette-3 : #79BD9A !default;
-$color-palette-4 : #3B8686 !default;
-$color-palette-5 : #0B486B !default;
-
-
-// Definitions //
-/*
-primary     : text
-secondary   : backdrop
-tertiary    : emphasis
-bg-primary  : prominent background
-bg-secondary: tier 2 background
-bg-tertiary : tier 3 background
-
-primary and secondary complement
-*/
+// Text opacity dark:
+// primary 87%
+// secondary 54%
+// hint 38%
+// dividers 12%
+//
+// Text opacity light:
+// primary 100%
+// secondary 70%
+// disabled 50%
+// dividers 12%
+//
+// Background colors:
+// 1: status bar
+// 2: header bar
+// 3: background
+// 4: foreground
 
 
-// Light Theme //
-$color-primary     : $color-grey-5 !default;
-$color-secondary   : $color-grey-1 !default;
-$color-tertiary    : $color-palette-4 !default;
-$color-bg-primary  : $color-palette-5 !default;
-$color-bg-secondary: $color-palette-3 !default;
-$color-bg-tertiary : $color-palette-2 !default;
+////////////////
+// color base //
+////////////////
+
+$color-light-1: #E0E0E0 !default;
+$color-light-2: #F5F5F5 !default;
+$color-light-3: #FAFAFA !default;
+$color-light-4: #FEFEFE !default;
+
+
+$color-light-text-1: rgba($color-light-4, 1) !default;
+$color-light-text-2: rgba($color-light-4, 0.7) !default;
+$color-light-text-3: rgba($color-light-4, 0.5) !default;
+$color-light-text-4: rgba($color-light-4, 0.12) !default;
+
+$color-dark-1: #000000 !default;
+$color-dark-2: #212121 !default;
+$color-dark-3: #303030 !default;
+$color-dark-4: #424242 !default;
+
+$color-dark-text-1: rgba($color-dark-1, 0.87) !default;
+$color-dark-text-2: rgba($color-dark-1, 0.66) !default;
+$color-dark-text-3: rgba($color-dark-1, 0.38) !default;
+$color-dark-text-4: rgba($color-dark-1, 0.12) !default;
+
+////////////////////
+// color emphasis //
+////////////////////
+
+$color-palette-1: #006064 !default;
+$color-palette-2: #0097A7 !default;
+$color-palette-3: #00BCD4 !default;
+$color-palette-4: #FFD54F !default;
+
+
+/////////////////////
+// define palettes //
+/////////////////////
+
+// light theme
+$color-bg-1     : $color-light-1 !default;
+$color-bg-2     : $color-light-2 !default;
+$color-bg-3     : $color-light-3 !default;
+$color-bg-4     : $color-light-4 !default;
+$color-primary  : $color-palette-2 !default;
+$color-secondary: $color-palette-1 !default;
+$color-accent   : $color-palette-3 !default;
+$color-text-1   : $color-dark-text-1 !default;
+$color-text-2   : $color-dark-text-2 !default;
+$color-text-3   : $color-dark-text-3 !default;
+$color-text-4   : $color-dark-text-4 !default;
+
+// // dark theme
+// $color-bg-1     : $color-dark-1 !default;
+// $color-bg-2     : $color-dark-2 !default;
+// $color-bg-3     : $color-dark-3 !default;
+// $color-bg-4     : $color-dark-4 !default;
+// $color-primary  : $color-palette-2 !default;
+// $color-secondary: $color-palette-1 !default;
+// $color-accent   : $color-palette-3 !default;
+// $color-text-1   : $color-light-text-1 !default;
+// $color-text-2   : $color-light-text-2 !default;
+// $color-text-3   : $color-light-text-3 !default;
+// $color-text-4   : $color-light-text-4 !default;

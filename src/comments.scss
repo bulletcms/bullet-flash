@@ -9,7 +9,7 @@
     padding: 4px;
 
     a {
-      color: $color-grey-4;
+      color: $color-text-2;
 
       &:hover {
         text-decoration: underline;
@@ -25,7 +25,7 @@
 
   .comment-info {
     .username {
-      color: $color-bg-primary;
+      color: $color-secondary;
 
       &:hover {
         text-decoration: underline;
@@ -46,11 +46,11 @@
 
 .comment .comment {
   margin: 0 0 0 6px;
-  border-left: 1px solid $color-bg-primary;
+  border-left: 1px solid $color-text-4;
 }
 
 .comment-replybox {
-  border: 1px solid $color-bg-primary;
+  border: 1px solid $color-text-4;
   border-radius: 4px;
   max-width: 100%;
 }

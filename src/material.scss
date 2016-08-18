@@ -8,50 +8,50 @@ $hover-color-lighten-percentage: 1.5625%;
 
 button, .button {
   padding: 12px;
-  border: 2px solid $color-tertiary;
+  border: 2px solid $color-primary;
   border-radius: 4px;
-  color: $color-secondary;
-  background-color: $color-tertiary;
+  color: $color-light-text-1;
+  background-color: $color-primary;
   cursor: pointer;
 
   &:hover {
-    color: $color-tertiary;
-    background-color: $color-secondary;
-    border: 2px solid $color-tertiary;
+    color: $color-primary;
+    background-color: $color-light-text-1;
+    border: 2px solid $color-primary;
   }
 }
 
 .button-primary {
-  background-color: $color-bg-primary;
-  border: 2px solid $color-bg-primary;
+  background-color: $color-secondary;
+  border: 2px solid $color-secondary;
 
   &:hover {
-    color: $color-bg-primary;
-    background-color: $color-secondary;
-    border: 2px solid $color-bg-primary;
+    color: $color-secondary;
+    background-color: $color-light-text-1;
+    border: 2px solid $color-secondary;
   }
 }
 
 .button-outline {
-  color: $color-tertiary;
-  background-color: $color-secondary;
-  border: 2px solid $color-tertiary;
+  color: $color-primary;
+  background-color: $color-light-text-1;
+  border: 2px solid $color-primary;
 
   &:hover {
-    color: $color-secondary;
-    background-color: $color-tertiary;
-    border: 2px solid $color-tertiary;
+    color: $color-light-text-1;
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
   }
 }
 
 .button-outline-primary {
-  color: $color-bg-primary;
-  background-color: $color-secondary;
-  border: 2px solid $color-bg-primary;
+  color: $color-secondary;
+  background-color: $color-light-text-1;
+  border: 2px solid $color-secondary;
 
   &:hover {
-    color: $color-secondary;
-    background-color: $color-bg-primary;
-    border: 2px solid $color-bg-primary;
+    color: $color-light-text-1;
+    background-color: $color-secondary;
+    border: 2px solid $color-secondary;
   }
 }
