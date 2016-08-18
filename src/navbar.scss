@@ -53,13 +53,17 @@ nav, .nav {
       li {
         float: left;
         display: inline-block;
-        padding: 4px;
+        padding: 0 16px;
         height: $navbar-height;
         line-height: $navbar-height;
+        &:hover {
+          background-color: $color-bg-1;
+          color: $color-text-1;
+        }
       }
 
       li + li {
-        margin: 0 0 0 24px;
+        margin: 0 0 0 8px;
       }
     }
 
