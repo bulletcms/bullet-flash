@@ -1,11 +1,10 @@
-aside, .aside {
-
-}
-
-.sidebar {
+aside, .aside, .sidebar {
   background-color: $color-bg-4;
   color: $color-text-2;
   box-shadow: 4px 1px 6px 1px rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 100%;
+  max-width: 100%;
 
   a {
     @extend a.no-style;
@@ -35,5 +34,38 @@ aside, .aside {
   .list-item {
     width: 100%;
     padding: 16px;
+  }
+}
+
+.counter-aside {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: $grid-sm-breakpoint) and (max-width: $grid-md-breakpoint - 1px){
+  aside, .aside, .sidebar {
+    max-width: ($grid-sm-breakpoint + $grid-md-breakpoint) * 3 / 32;
+  }
+  .counter-aside {
+    max-width: calc(100% - #{($grid-sm-breakpoint + $grid-md-breakpoint) * 3 / 32});
+  }
+}
+
+@media (min-width: $grid-md-breakpoint) and (max-width: $grid-lg-breakpoint - 1px){
+  aside, .aside, .sidebar {
+    max-width: $grid-md-breakpoint * 3 / 16;
+  }
+  .counter-aside {
+    max-width: calc(100% - #{$grid-md-breakpoint * 3 / 16});
+  }
+}
+
+@media (min-width: $grid-lg-breakpoint){
+  aside, .aside, .sidebar {
+    max-width: $grid-md-breakpoint * 3 / 16;
+  }
+  .counter-aside {
+    max-width: calc(100% - #{$grid-md-breakpoint * 3 / 16});
   }
 }
