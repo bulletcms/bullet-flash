@@ -6,11 +6,13 @@ input, textarea {
 .input {
   position: relative;
   width: 240px;
+  padding: 20px 0;
 
   input {
     font-size: 1em;
     border-bottom: 1px solid $color-text-4;
     width: 100%;
+    padding: 4px 0;
 
     & + label {
       transition-duration: .2s;
@@ -59,6 +61,13 @@ input, textarea {
         visibility: visible;
         width: 100%;
       }
+    }
+
+    &:not(:placeholder-shown) + label {
+      color: $color-primary;
+      font-size: 0.75em;
+      top: 4px;
+      visibility: visible;
     }
   }
 }
