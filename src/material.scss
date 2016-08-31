@@ -13,6 +13,8 @@ button, .button {
   color: $color-light-text-1;
   background-color: $color-primary;
   cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.88em;
 
   &:hover {
     color: $color-primary;

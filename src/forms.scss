@@ -1,0 +1,48 @@
+input, textarea {
+  font-family: 'Open Sans', sans-serif;
+  background: transparent;
+}
+
+.input {
+  position: relative;
+  
+  input {
+    font-size: 1em;
+    border-bottom: 1px solid $color-text-4;
+
+    & + label {
+      &:after {
+        background-color: $color-primary;
+        bottom: 20px;
+        content: '';
+        height: 2px;
+        left: 45%;
+        position: absolute;
+        transition-duration: .2s;
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+        visibility: hidden;
+        width: 10px;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus + label {
+      &:after {
+        left: 0;
+        visibility: visible;
+        width: 100%;
+      }
+    }
+  }
+}
+
+textarea {
+  font-size: 0.92em;
+
+  &:focus {
+    outline: none;
+  }
+}
