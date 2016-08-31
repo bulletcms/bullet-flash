@@ -69,17 +69,32 @@ input, textarea {
       top: 4px;
       visibility: visible;
     }
+  }
 
-    &:invalid + label {
-      color: $color-invalid !important;
+  .error {
+    color: $color-invalid;
+    position: absolute;
+    font-size: 0.75em;
+    margin-top: 3px;
+    visibility: hidden;
+    display: block;
+  }
+}
 
-      &:after {
-        background-color: $color-invalid;
-        left: 0;
-        visibility: visible;
-        width: 100%;
-      }
+.input.invalid {
+  label {
+    color: $color-invalid !important;
+
+    &:after {
+      background-color: $color-invalid;
+      left: 0;
+      visibility: visible;
+      width: 100%;
     }
+  }
+
+  .error {
+    visibility: visible;
   }
 }
 
