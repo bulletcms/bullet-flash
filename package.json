@@ -1,6 +1,6 @@
 {
   "name": "bullet-flash",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "muzzle flash style for bullet-tracer",
   "main": "src/main.scss",
   "scripts": {
