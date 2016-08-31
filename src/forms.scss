@@ -69,6 +69,17 @@ input, textarea {
       top: 4px;
       visibility: visible;
     }
+
+    &:invalid + label {
+      color: $color-invalid !important;
+
+      &:after {
+        background-color: $color-invalid;
+        left: 0;
+        visibility: visible;
+        width: 100%;
+      }
+    }
   }
 }
 
