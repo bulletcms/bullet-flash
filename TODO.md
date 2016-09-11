@@ -5,12 +5,6 @@
   - [x] container, max width
   - [x] large screen support
   - [ ] image wall
-- [ ] nav bar
-- [ ] side bar
+- [x] article
+  - [ ] images
 - [ ] timeline
-- [ ] hero
-  - [ ] background image
-
-
-### Finished
-- [x] footer
